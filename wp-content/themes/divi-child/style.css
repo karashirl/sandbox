@@ -1,0 +1,21 @@
+/*
+ Theme Name:   Divi Child
+ Description:  Divi.v2.4 Child Theme 
+ Author:       Joseph Hritz
+ Author URI:   http://sinclairdigital.com
+ Template:     Divi
+ Version:      1.0.0
+ Text Domain:  divi-child
+*/
+
+
+.et_pb_fullwidth_header .et_pb_fullwidth_header_container.center .header-content {
+    margin-top: -100px !important;
+
+}
+
+
+.et_pb_cta_0.et_pb_promo {
+    border-radius: 10px !important;
+
+}
