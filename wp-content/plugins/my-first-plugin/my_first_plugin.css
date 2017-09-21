@@ -1,0 +1,104 @@
+.slider-container {
+	width: 100%;
+	position: relative;
+}
+
+.slider-container, .slider-container * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.slider-container ul {
+	position: relative;
+	list-style: none;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 100%;
+	font-size: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.slider-container ul :after {
+	display: block;
+	content: " ";
+	clear: both;
+}
+
+.slider-container ul li {
+	position: relative;
+	font-size: unset;
+	width: 100%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.slider-container ul li img {
+	width: 100%;
+	height: auto;
+}
+
+.slider-container .content {
+	width: 100%;
+	background-color: #222;
+	color: #fff;
+	padding: 15px;
+}
+
+.slider-container .content h1, .slider-container .content h3 {
+	color: #fff;
+}
+
+.flag-bubble {
+	width: 15%;
+	height: 0;
+	padding-bottom: 15%;
+	overflow: hidden;
+	border-radius: 500px;
+	position: absolute;
+	top: 0
+	right: 0;
+	margin-top: 5%;
+	margin-right: 5%;
+}
+
+.slider-container .control {
+	position: absolute;
+	top: 0;
+	font-size: 6vw;
+	color: #000;
+	padding-top: 34%;
+}
+.slider-container .control.right {
+	right: 0;
+}
+
+
+/* <div class="slider-container">
+	<ul>
+		<?php
+			$cities = pods('city', array(
+				'limit' => -1
+			));
+			while ($cities->fetch()):
+				$img = get_the_post_thumbnail($cities->display('ID'), 'full', array());
+				$img = preg_replace('/(width|height)="\d+"/', '', $img);
+		?>
+		<li>
+			<img src="<?php echo $img ?>" alt="">
+			<div class="content">
+				<h1><?php echo $cities->display('post_title'); ?></h1>
+				<h2>Known for: <?php echo $cities->display('known_for'); ?></h2>
+				<div class="excerpt"><?php echo $cities->display('excerpt'); ?></div>
+				<div class="flag-bubble">
+					<img src="<?php echo $cities->display('city_flag'); ?>">
+				</div>
+			</div>
+		</li>
+		<?php endwhile; ?>
+	</ul>
+	<div class="control left">&lt;</div>
+	<div class="control right">&gt;</div>
+</div>
+*/
